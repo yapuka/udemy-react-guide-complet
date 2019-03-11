@@ -4,7 +4,8 @@ const Member = ({ age, children, nom }) => {
   return (
     <Fragment>
       <h2 style={{
-        backgroundColor: 'violet'
+        backgroundColor: age < 10 ? 'yellow' : 'purple',
+        color: age < 10 ? 'black' : 'white'
       }}>
         {nom.toUpperCase()} : {age}
       </h2>
