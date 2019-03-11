@@ -12,7 +12,10 @@ class App extends Component {
         <Membre nom="Antho" />
         <Membre nom="Ségolène" />
         <Membre nom="Eléanor" />
-        <Membre nom="Mocha" />
+
+        <Membre nom="Mocha">
+          <strong>Je suis un chien</strong>
+        </Membre>
       </div>
     )
   }
