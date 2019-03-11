@@ -1,0 +1,20 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "globals": {},
+  "rules": {
+    "arrow-parens": ["error", "always"],
+    "react/prop-types": 0
+  }
+}

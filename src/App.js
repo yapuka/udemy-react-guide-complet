@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './App.css';
+import './App.css'
 import Membre from './components/Membre'
 
 class App extends Component {
@@ -8,10 +8,9 @@ class App extends Component {
       <div className="App">
         <h1>React App</h1>
         <Membre />
-        
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
