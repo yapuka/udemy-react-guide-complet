@@ -27,7 +27,10 @@ class App extends Component {
   }
 
   handleClick = () => {
-    console.log('Click');
+    const { famille } = this.state
+    famille.membre1.age += 1
+
+    this.setState({ famille })
   }
 
   render() {
@@ -38,16 +41,14 @@ class App extends Component {
       <div className="App">
         <h1>{titre}</h1>
 
-        <Membre nom={famille.membre1.nom} />
-        <Membre nom={famille.membre2.nom} />
-        <Membre nom={famille.membre3.nom} />
-        <Membre nom={famille.membre4.nom}>
+        <Membre nom={famille.membre1.nom} age={famille.membre1.age} />
+        <Membre nom={famille.membre2.nom} age={famille.membre2.age} />
+        <Membre nom={famille.membre3.nom} age={famille.membre3.age} />
+        <Membre nom={famille.membre4.nom} age={famille.membre4.age}>
           <strong>Je suis un chien</strong>
         </Membre>
 
-        <button onClick={this.handleClick}>
-          Veillir
-        </button>
+        <button onClick={this.handleClick}>Veillir</button>
       </div>
     )
   }
