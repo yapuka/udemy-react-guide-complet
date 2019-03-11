@@ -8,6 +8,12 @@ class App extends Component {
       <div className="App">
         <h1>React App</h1>
         <Membre />
+        <Membre />
+        <Membre />
+        <Membre />
+        <Membre />
+        <Membre />
+        <Membre />
       </div>
     );
   }
