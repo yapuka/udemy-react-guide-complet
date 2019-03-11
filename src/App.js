@@ -17,13 +17,17 @@ const famille = {
   },
   membre4: {
     nom: 'Mocha',
-    age: 2
-  }
+    age: 2,
+  },
 }
 
 class App extends Component {
   state = {
     famille,
+  }
+
+  handleClick = () => {
+    console.log('Click');
   }
 
   render() {
@@ -40,6 +44,10 @@ class App extends Component {
         <Membre nom={famille.membre4.nom}>
           <strong>Je suis un chien</strong>
         </Membre>
+
+        <button onClick={this.handleClick}>
+          Veillir
+        </button>
       </div>
     )
   }
