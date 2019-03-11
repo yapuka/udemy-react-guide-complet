@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Membre from './components/Membre'
+import Button from './components/Button'
 
 const famille = {
   membre1: {
@@ -48,7 +49,7 @@ class App extends Component {
           <strong>Je suis un chien</strong>
         </Membre>
 
-        <button onClick={this.handleClick}>Veillir</button>
+        <Button vieillir={this.handleClick} />
       </div>
     )
   }
